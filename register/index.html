@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body id="page-top" onload="nav()">
+
+	<!--loader-->
+        <div id="loader-wrapper">
+            <div class="wrapper flex-center">
+                <div class="containerr">
+              
+                  <div class="containerr-dot dot-a">
+                    <div class="dot"></div>
+                  </div>
+              
+                  <div class="containerr-dot dot-b">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="containerr-dot dot-c">
+                    <div class="dot"></div>
+                  </div>
+              
+                  <div class="containerr-dot dot-d">
+                    <div class="dot"></div>
+                  </div>
+              
+                  <div class="containerr-dot dot-e">
+                    <div class="dot"></div>
+                  </div>
+              
+                  <div class="containerr-dot dot-f">
+                    <div class="dot"></div>
+                  </div>
+                  <div class="containerr-dot dot-g">
+                    <div class="dot"></div>
+                  </div>
+              
+                  <div class="containerr-dot dot-h">
+                    <div class="dot"></div>
+                  </div>
+              
+              
+                </div>
+              </div>
+        </div>
+
+         <!-- Navigation-->
+       <div class="topnav">
+  <a  href="https://ieeesbmuj.netlify.app/">HomePage</a>
+  <a href="https://ieeesbmuj.netlify.app/teams/index.html">Events</a>
+  <a href="https://ieeesbmuj.netlify.app/teams/index.html" >Our Team</a>
+  <a href="#page-top" class="active">Join Us</a>
+  <a href="#contact">Contact Us</a>
+</div>
+
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="container " id="container">
+		<div class="form-container sign-in-container">
+			<form id="contactForm" name="sentMessage" novalidate="novalidate">
+				<h1>Come Join Us!!!</h1>
+	            <input name="name" type="name" placeholder="Name" required>
+	            <input name="email" type="email" placeholder="E-mail" required>
+	            <input name="mobile no" type="mobile no" placeholder="Mobile Number" required>
+	            <input name="course" type="course" placeholder="Course" required>
+	            <input name="paytm/upi id no" type="paytm/upi id no" placeholder="Paytm/UPI Transaction Number" required>
+	            <input name="registeration no" type="registeration no" placeholder="Registration Number" required>
+	            <input name="mode of payment" type="mode of payment" placeholder="Mode of Payment" required>
+	            <br>
+				<button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Submit Details</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<span style="color:black">
+					<div class="overlay-panel overlay-right">
+					<h1>Welcome to IEEE SB MUJ</h1>
+					<img class="img-fluid" src="qr.jpg" alt="" />
+					<br>
+					<span style="color: #2A3439">
+						<h5>
+						Scan the above QR code and follow the steps:-
+							<ul>Step1:- Scan the QR code and do the necessary steps </ul>
+							<ul>Step2:- Fill the information in the form given .</ul>
+							<ul>Step3:- You are done. Welcome to IEEE SB MUJ family</ul>
+					</h5>
+					</span>
+					
+				</div>
+				</span>
+			</div>
+		</div>
+	</div>
+<script src="register/index.js"></script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQ1e5-jGJMdrH5wksXFDAB36R8gS_2wneyqB_BCaGcdhIQz4cM/exec'
+  const form = document.forms['contactForm']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script type="text/javascript">
+     const nav = () => {
+            var loader = document.getElementById('loader-wrapper');
+            loader.style.display='block';
+            setTimeout(()=>loader.style.display = 'none', 3000);
+            }
+</script>
+</body>
+</html>
