@@ -472,10 +472,13 @@ button,
 select,
 optgroup,
 textarea {
+  display: flex;
   margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  align-items: center;
+  align-self: center;
 }
 
 button,

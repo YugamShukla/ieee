@@ -503,6 +503,13 @@ globe.
         </div>
 
     </body>
+    <script type="text/javascript">
+        const nav = () => {
+               var loader = document.getElementById('loader-wrapper');
+               loader.style.display='block';
+               setTimeout(()=>loader.style.display = 'none', 3000);
+               }
+   </script>
        
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -524,13 +531,6 @@ globe.
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
-</script>
-<script type="text/javascript">
-     const nav = () => {
-            var loader = document.getElementById('loader-wrapper');
-            loader.style.display='block';
-            setTimeout(()=>loader.style.display = 'none', 3000);
-            }
 </script>
     </body>
 </html>
