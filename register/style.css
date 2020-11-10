@@ -92,7 +92,7 @@
 }
 
 body {
-	background-color: #C6DEFF;
+	background-image: url("https://th.bing.com/th/id/OIP.q25WikUFGxbe3PaJdvnK-QHaEo?pid=Api&rs=1");
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -212,7 +212,7 @@ body {
 
 .form-sign-in-with-social {
 	display: inline-block;
-	max-width: 200px;
+	max-width: 25%;
 	box-sizing: border-box;
 	vertical-align: top;
 	text-align: center;
