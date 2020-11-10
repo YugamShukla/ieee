@@ -37,15 +37,6 @@
 }
 
 
-body {
-  background: #000;
-  color: #3df1f1;
-  font: 1em Dosis, sans-serif;
-  height: 100vh;
-  line-height: 1.5;
-  perspective: 40em;
-}
-
 .preloader {
   animation: tiltSpin 8s linear infinite;
   flex-direction: column;
@@ -63,7 +54,7 @@ body {
 
 .preloader__ring {
   animation-name: spin;
-  animation-duration: 4s;
+  animation-duration: 3s;
   animation-timing-function: inherit;
   animation-iteration-count: inherit;
   font-size: 2em;
