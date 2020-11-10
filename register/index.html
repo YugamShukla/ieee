@@ -12,14 +12,77 @@
 </head>
 
 <body >
+	<!--loader-->
+	<div id="overlayer">
+        <div id="overlayer1">
+            <div class="preloader">
+                <div class="preloader__ring">
+                    <div class="preloader__sector">i</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">s</div>
+                    <div class="preloader__sector">b</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">m</div>
+                    <div class="preloader__sector">u</div>
+                    <div class="preloader__sector">j</div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                   
+                </div>
+                <div class="preloader__ring">
+                    <div class="preloader__sector">i</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">s</div>
+                    <div class="preloader__sector">b</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">m</div>
+                    <div class="preloader__sector">u</div>
+                    <div class="preloader__sector">j</div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    
+                </div>
+            </div>
+        </div>
 
+       </div>
 	<!-- Navigation-->
-	<div class="topnav">
-		<a href="https://ieeesbmuj.netlify.app/">Home</a>
-		<a href="https://ieeesbmuj.netlify.app/teams/index.html">Events</a>
-		<a href="https://ieeesbmuj.netlify.app/teams/index.html">Our Team</a>
-		<a href="#page-top" class="active">Join Us</a>
-	</div>
+    <div class="topnav">
+        <a href="https://ieeemuj.com/">Home</a>
+        <a href="https://ieeemuj.com/Events/index.html" >Events</a>
+        <a href="https://ieeemuj.com/teams/index.html">Our Team</a>
+        <a href="https://ieeemuj.com/register/index.html" class="active">Join Us</a>
+    </div>
 	<br>
 	<br>
 	<br>
@@ -139,6 +202,14 @@
 				.catch(error => console.error('Error!', error.message))
 		})
 	</script>
+	<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+   $(window).load(function() {
+   $(".preloader").delay(5000).fadeOut("slow");
+   $("#overlayer").delay(5000).fadeOut("slow");
+   })
+</script>
 </body>
 
 </html>
