@@ -17,38 +17,79 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body  id="page-top" onload="preloader">
+    <body  id="page-top" >
         <!--loader-->
-        <div class="preloader">
-            <div class="preloader__ring">
-                <div class="preloader__sector">i</div>
-                <div class="preloader__sector">e</div>
-                <div class="preloader__sector">e</div>
-                <div class="preloader__sector">e</div>
-                <div class="preloader__sector"> </div>
-                <div class="preloader__sector">s</div>
-                <div class="preloader__sector">b</div>
-                <div class="preloader__sector"> </div>
-                <div class="preloader__sector">m</div>
-                <div class="preloader__sector">u</div>
-                <div class="preloader__sector">j</div>
-               
-            </div>
-            <div class="preloader__ring">
-                <div class="preloader__sector">i</div>
-                <div class="preloader__sector">e</div>
-                <div class="preloader__sector">e</div>
-                <div class="preloader__sector">e</div>
-                <div class="preloader__sector"> </div>
-                <div class="preloader__sector">s</div>
-                <div class="preloader__sector">b</div>
-                <div class="preloader__sector"> </div>
-                <div class="preloader__sector">m</div>
-                <div class="preloader__sector">u</div>
-                <div class="preloader__sector">j</div>
-                
+       <div id="overlayer">
+        <div id="overlayer1">
+            <div class="preloader">
+                <div class="preloader__ring">
+                    <div class="preloader__sector">i</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">s</div>
+                    <div class="preloader__sector">b</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">m</div>
+                    <div class="preloader__sector">u</div>
+                    <div class="preloader__sector">j</div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                </div>
+                <div class="preloader__ring">
+                    <div class="preloader__sector">i</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector">e</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">s</div>
+                    <div class="preloader__sector">b</div>
+                    <div class="preloader__sector"> </div>
+                    <div class="preloader__sector">m</div>
+                    <div class="preloader__sector">u</div>
+                    <div class="preloader__sector">j</div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                    <div class="preloader__sector"></div>
+                </div>
             </div>
         </div>
+
+       </div>
 
         <!--Navigation-->
          <div class="topnav">
@@ -523,6 +564,14 @@ globe.
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+   $(window).load(function() {
+   $(".preloader").delay(5000).fadeOut("slow");
+   $("#overlayer").delay(5000).fadeOut("slow");
+   })
 </script>
     </body>
 </html>
